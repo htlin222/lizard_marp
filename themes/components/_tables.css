@@ -43,7 +43,7 @@ section table tbody > tr:nth-child(odd) th {
 
 tr.emphasize,
 tr:hover {
-    transform: scale(1.12);
+    transform: scale(1.02);
     position: relative;
     z-index: 10;
     outline: 2px solid var(--JAMA-blue);
@@ -53,12 +53,12 @@ tr.emphasize::after,
 tr:hover::after {
     content: "";
     position: absolute;
-    bottom: -5px; /* 調整陰影距離 */
+    bottom: -15px; /* 調整陰影距離 */
     left: 5%;
     width: 90%;
     height: 10px; /* 模糊範圍高度 */
     background: rgba(0, 0, 0, 0.2); /* 模擬陰影顏色 */
-    filter: blur(4px); /* 模糊效果 */
+    filter: blur(9px); /* 模糊效果 */
     z-index: -1; /* 置於背景 */
     pointer-events: none; /* 避免影響互動 */
 }

@@ -52,11 +52,15 @@ section p {
 }
 
 section mark {
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 700;
     color: var(--JAMA-blue);
     display: inline-block;
     background: transparent;
+    background: #e0e0e0; /* 灰色背景 */
+    border-radius: 10px; /* 圓角 */
+    padding: 5px 10px; /* 增加內邊距，讓背景看起來更好 */
+    margin: 2px 0; /* 增加一些外邊距 */
     padding-bottom: 3px;
     /* background-image: linear-gradient(#3d6869 0 0); */
     background-position: 0 100%; /*OR bottom left*/
