@@ -1,5 +1,22 @@
 /* @theme utils/_animations */
 
+@keyframes weightChange {
+    0% {
+        font-variation-settings: "wght" 500;
+        letter-spacing: 1px;
+    }
+    100% {
+        font-variation-settings: "wght" 800;
+
+        letter-spacing: 10px;
+    }
+}
+
+.animated-text {
+    font-variation-settings: "wght" 500;
+    animation: weightChange 0.5s ease-in-out infinite alternate;
+}
+
 @keyframes underline-animation {
     0% {
         color: var(--JAMA-foreground);

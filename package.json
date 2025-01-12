@@ -36,6 +36,7 @@
 		"markdown-it-collapsible": "^2.0.2",
 		"markdown-it-container": "^4.0.0",
 		"markdown-it-deflist": "^3.0.0",
+		"markdown-it-fontawesome": "^0.3.0",
 		"markdown-it-github-alert": "^1.0.6",
 		"markdown-it-github-alerts": "^0.3.0",
 		"markdown-it-graphviz": "^1.1.2",

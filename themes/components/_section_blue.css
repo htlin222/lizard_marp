@@ -1,7 +1,7 @@
 /* @theme components/_section_blue */
 
 section.blue > h1 {
-    font-size: 5px;
+    font-size: 0px;
     color: var(--JAMA-blue);
     position: absolute;
     top: 20px;

@@ -178,13 +178,14 @@ section header {
     font-weight: 500;
     color: var(--JAMA-background) !important;
     border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     /* border-bottom-right-radius: 15px; */
     /* border-left: #2d696a 35px solid; */
     font-size: 18px;
     height: 30px;
-    padding: 3px 20px;
+    padding: 5px 20px;
     right: 0;
-    top: 0;
+    top: 8;
     font-weight: 400;
     text-align: right;
     /* max-width: 500px; */
@@ -325,4 +326,15 @@ section.free div {
 .popup.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#000 1px, transparent 1px);
+    background-size: 10px 10px; /* 點的大小與間距 */
+    pointer-events: none; /* 讓覆蓋層不影響點擊事件 */
 }
