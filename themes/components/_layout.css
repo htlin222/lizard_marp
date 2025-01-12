@@ -354,7 +354,7 @@ a {
 }
 ul li:hover::marker {
     transform: scale(1.5);
-    color: #ffb703;
+    color: var(--JAMA-orange);
 }
 li {
     transition: opacity 0.3s ease;
@@ -371,6 +371,9 @@ li:hover {
     text-decoration-color: #6c9a77;
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
+}
+.fa-solid {
+    color: var(--JAMA-orange);
 }
 /* for toc */
 .scroll li:hover {
