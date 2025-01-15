@@ -52,16 +52,17 @@ section p {
 }
 
 section mark {
-    font-size: 120%;
+    font-size: 110%;
     font-weight: 700;
     color: var(--JAMA-blue);
     display: inline-block;
-    background: transparent;
-    background: #e0e0e0; /* 灰色背景 */
-    border-radius: 10px; /* 圓角 */
-    padding: 5px 10px; /* 增加內邊距，讓背景看起來更好 */
-    margin: 2px 0; /* 增加一些外邊距 */
-    padding-bottom: 3px;
+    background: #e0e0e0;
+    /* background: var(--JAMA-orange); */
+    box-shadow: 2px 2px 0px var(--JAMA-orange);
+    border-radius: 8px; /* 圓角 */
+    padding: 2px 8px; /* 增加內邊距，讓背景看起來更好 */
+    margin: 1px 0; /* 增加一些外邊距 */
+    padding-bottom: 2px;
     /* background-image: linear-gradient(#3d6869 0 0); */
     background-position: 0 100%; /*OR bottom left*/
     background-repeat: no-repeat;
@@ -177,15 +178,17 @@ section header {
     background-color: var(--JAMA-blue);
     font-weight: 500;
     color: var(--JAMA-background) !important;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom-left-radius: 15px; */
     border-top-left-radius: 15px;
     /* border-bottom-right-radius: 15px; */
     /* border-left: #2d696a 35px solid; */
     font-size: 18px;
     height: 30px;
     padding: 5px 20px;
-    right: 0;
-    top: 8;
+    top: 2rem;
+    right: 2rem;
     font-weight: 400;
     text-align: right;
     /* max-width: 500px; */
