@@ -11,7 +11,7 @@ img[alt*="uml"] {
 
 img {
     max-width: 1200px !important;
-    max-height: 520px !important;
+    max-height: 600px !important;
     width: auto;
     height: auto;
     object-fit: contain; /* 確保圖片在指定範圍內縮放並保持比例 */
