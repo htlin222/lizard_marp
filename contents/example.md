@@ -294,6 +294,16 @@ hi there
 
 :::
 
+## Test frag of code
+
+```txt
+1 {data-marpit-fragment="1"}
+2 {data-marpit-fragment="2"}
+3 {data-marpit-fragment="3"}
+```
+
+code here {data-marpit-fragment="1"}
+
 # Takeaway
 
 ## Thank You 🙏 🫰
