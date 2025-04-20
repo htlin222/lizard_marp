@@ -52,16 +52,14 @@ section p {
 }
 
 section mark {
-    font-size: 110%;
     font-weight: 700;
-    color: var(--JAMA-blue);
+    color: var(--JAMA-foreground);
     display: inline-block;
-    background: #e0e0e0;
-    /* background: var(--JAMA-orange); */
-    box-shadow: 2px 2px 0px var(--JAMA-orange);
-    border-radius: 8px; /* 圓角 */
-    padding: 2px 8px; /* 增加內邊距，讓背景看起來更好 */
-    margin: 1px 0; /* 增加一些外邊距 */
+    /* background: #e0e0e0; */
+    background: var(--JAMA-orange);
+    border-radius: 6px; /* 圓角 */
+    padding: 0px 10px; /* 增加內邊距，讓背景看起來更好 */
+    margin: 0px 8px; /* 增加一些外邊距 */
     padding-bottom: 2px;
     /* background-image: linear-gradient(#3d6869 0 0); */
     background-position: 0 100%; /*OR bottom left*/
@@ -154,7 +152,8 @@ section > a:hover {
 }
 
 em {
-    font-family: "Lora", serif; /* 使用 'Lora' 字體，若無法加載則回退到系統的serif字體 */
+    font-family:
+        "Lora", serif; /* 使用 'Lora' 字體，若無法加載則回退到系統的serif字體 */
     font-weight: 700;
     font-style: italic; /* 設置斜體 */
 }

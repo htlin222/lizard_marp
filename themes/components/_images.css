@@ -10,7 +10,7 @@ img[alt*="uml"] {
 }
 
 img {
-    max-width: 1200px !important;
+    max-width: 1000px !important;
     max-height: 600px !important;
     width: auto;
     height: auto;

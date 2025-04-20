@@ -401,8 +401,8 @@ button {
     font-size: inherit;
     line-height: 1;
     border-radius: 200px;
-    transition-property: background-color, border-color, color, box-shadow,
-        filter;
+    transition-property:
+        background-color, border-color, color, box-shadow, filter;
     transition-duration: 0.3s;
     border: 1px solid transparent;
     letter-spacing: 2px;
@@ -748,6 +748,10 @@ g {
     column-count: 4; /* 設定為兩欄 */
 }
 
+section.keypoints > ul {
+    font-size: 36px !important;
+}
+
 section.timeline > ul:first-of-type {
     display: flex; /* 使用 flex 排列 */
     gap: 10px; /* 項目間距 */
@@ -813,4 +817,18 @@ section.flexImg > ul > li img {
     max-width: 100%; /* 確保圖片不超出 li */
     max-height: 100%; /* 防止圖片過高 */
     object-fit: contain; /* 保持圖片比例 */
+}
+
+.flex-list ul {
+    display: flex;
+    gap: 20px; /* 設定項目間距 */
+    list-style: none; /* 移除預設的圓點 */
+    padding: 0;
+    margin: 20px;
+}
+.flex-list li {
+    flex: 1; /* 讓所有 li 平均佔據可用寬度 */
+    text-align: left; /* 文字置中 */
+    padding: 30px;
+    background-color: #f0f0f0;
 }

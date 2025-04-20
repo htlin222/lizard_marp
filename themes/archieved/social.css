@@ -447,8 +447,8 @@ button {
     font-size: inherit;
     line-height: 1;
     border-radius: 200px;
-    transition-property: background-color, border-color, color, box-shadow,
-        filter;
+    transition-property:
+        background-color, border-color, color, box-shadow, filter;
     transition-duration: 0.3s;
     border: 1px solid transparent;
     letter-spacing: 2px;
@@ -515,7 +515,4 @@ img[alt*="emojik"] {
     position: absolute; /* sets the position of the element to absolute */
     right: 200px;
     bottom: 200px;
-}
-.test {
-    color: #595959;
 }

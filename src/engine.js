@@ -3,6 +3,7 @@ const applyPlugins = require("./plugins");
 const applyLineNumber = require("./utils/lineNumber");
 const applyStrongTb = require("./utils/strong_tb");
 const addClassPerRule = require("./utils/add_class_per_rule");
+const setClassAsKeypoints = require("./utils/set_class_as_keypoints");
 // const applyDate = require("./utils/date");
 const applyLayout = require("./utils/layout");
 const applyDiagram = require("./utils/diagram");
@@ -24,6 +25,7 @@ module.exports = ({ marp }) => {
 	// addDynamicHeader(instance);
 	applyLayout(instance);
 	addClassPerRule(instance);
+	setClassAsKeypoints(instance);
 	applyStrongTb(instance);
 	applyH2text(instance);
 	// applyDate(instance);
