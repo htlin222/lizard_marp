@@ -25,7 +25,7 @@ module.exports = ({ marp }) => {
 	// addDynamicHeader(instance);
 	applyLayout(instance);
 	addClassPerRule(instance);
-	setClassAsKeypoints(instance);
+	// setClassAsKeypoints(instance);
 	applyStrongTb(instance);
 	applyH2text(instance);
 	// applyDate(instance);

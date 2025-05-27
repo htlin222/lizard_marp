@@ -5,9 +5,8 @@
 		"html": true,
 		"theme": "./themes/main.css",
 		"allowLocalFiles": true,
-		"ignore": "./node_modules/",
 		"browser": "chrome",
-		"browserPath": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome",
+		"ignore": "./node_modules/",
 		"pdfNotes": true,
 		"pdfOutlines": {
 			"pages": false,
@@ -69,7 +68,7 @@
 	"scripts": {
 		"dev": "marp -I ./contents -s",
 		"debug": "marp -I ./contents -s --debug",
-		"build:pdf": "marp --pdf",
+		"build:pdf": "marp --pdf --timeout 160000",
 		"build": "marp"
 	}
 }
