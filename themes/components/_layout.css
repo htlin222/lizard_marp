@@ -748,10 +748,6 @@ g {
     column-count: 4; /* 設定為兩欄 */
 }
 
-section ul li {
-    font-size: 0.7em; /* 比基礎字體小一點 */
-}
-
 section.keypoints > ul {
     font-size: 36px !important;
 }
