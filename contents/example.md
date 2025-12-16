@@ -39,6 +39,39 @@ cd lizard_marp
 npm install
 ```
 
+```python
+print("hellow")
+```
+
+### Left to Right Style
+
+## JS
+
+```javascript
+
+let name = "John"; // A string variable
+const age = 30; // A number constant
+var isStudent = true; // A boolean variable (older syntax)
+
+```
+
+## JS
+
+```r
+# Load libraries
+library(tidyverse)
+
+# Read and clean data
+data <- read_csv("data.csv") %>%
+  filter(!is.na(value)) %>%
+  mutate(category = as.factor(category))
+
+# Create visualization
+ggplot(data, aes(x = category, y = value)) +
+  geom_boxplot(fill = "steelblue") +
+  theme_minimal()
+```
+
 ## Project Structure
 
 <br>

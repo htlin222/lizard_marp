@@ -1,236 +1,231 @@
 /* @theme components/_section */
 
 section {
-    font-size: 22px;
-    font-weight: 500;
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Inter", sans-serif;
-    /* font-family: "Fira Sans", sans-serif; */
-    /* TODO: Change Main Font Here */
-    line-height: 1.15;
-    /* letter-spacing: 0.4px; */
-    padding: 35px 35px;
-    color: var(--JAMA-foreground);
-    background-color: var(--JAMA-background);
-    /* border-left: 10px solid; */
-    border-bottom: 10px solid;
-    border-image: linear-gradient(to bottom, #6c9a77, #2d696a);
-    border-image-slice: 1;
+	font-size: 22px;
+	font-weight: 500;
+	/* font-family: "Open Sans", sans-serif; */
+	font-family: "Inter", sans-serif;
+	/* font-family: "Fira Sans", sans-serif; */
+	/* TODO: Change Main Font Here */
+	line-height: 1.15;
+	/* letter-spacing: 0.4px; */
+	padding: 35px 35px;
+	color: var(--JAMA-foreground);
+	background-color: var(--JAMA-background);
+	/* border-left: 10px solid; */
+	border-bottom: 10px solid;
+	border-image: linear-gradient(to bottom, #6c9a77, #2d696a);
+	border-image-slice: 1;
 }
 
 section ul {
-    line-height: 1.5;
+	line-height: 1.5;
 }
 section ul strong,
 section table strong,
 section p strong {
-    padding: 0px 2px 0px 2px;
-    background: -webkit-linear-gradient(right, #6c9a77, #2d696a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	padding: 0px 2px 0px 2px;
+	background: -webkit-linear-gradient(right, #6c9a77, #2d696a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 /* 選擇文檔中的第一個 h1 標題 */
 .large-title {
-    font-size: 4em !important;
+	font-size: 4em !important;
 }
 
 section br {
-    break-before: column;
+	break-before: column;
 }
 section.lg table,
 section.lg > ul {
-    font-size: 1.5em !important;
-    line-height: 1.4;
+	font-size: 1.5em !important;
+	line-height: 1.4;
 }
 section.xl table {
-    font-size: 1.8em !important;
+	font-size: 1.8em !important;
 }
 section p {
-    font-size: 1em;
-    margin: 1em 0 1em 0;
-    /* transition: 0.3s; */
+	font-size: 1em;
+	margin: 1em 0 1em 0;
+	/* transition: 0.3s; */
 }
 
 section mark {
-    font-weight: 700;
-    color: var(--JAMA-foreground);
-    display: inline-block;
-    /* background: #e0e0e0; */
-    background: var(--JAMA-orange);
-    border-radius: 6px; /* 圓角 */
-    padding: 0px 10px; /* 增加內邊距，讓背景看起來更好 */
-    margin: 0px 8px; /* 增加一些外邊距 */
-    padding-bottom: 2px;
-    /* background-image: linear-gradient(#3d6869 0 0); */
-    background-position: 0 100%; /*OR bottom left*/
-    background-repeat: no-repeat;
-    background-size: 100% 5px;
+	font-weight: 700;
+	color: var(--JAMA-foreground);
+	display: inline-block;
+	/* background: #e0e0e0; */
+	background: var(--JAMA-orange);
+	border-radius: 6px; /* 圓角 */
+	padding: 0px 10px; /* 增加內邊距，讓背景看起來更好 */
+	margin: 0px 8px; /* 增加一些外邊距 */
+	padding-bottom: 2px;
+	/* background-image: linear-gradient(#3d6869 0 0); */
+	background-position: 0 100%; /*OR bottom left*/
+	background-repeat: no-repeat;
+	background-size: 100% 5px;
 }
 
 section ins::before {
-    content: "[ ";
-    font-size: 1.2em;
-    color: var(--JAMA-foreground);
+	content: "[ ";
+	font-size: 1.2em;
+	color: var(--JAMA-foreground);
 }
 section ins::after {
-    content: " ]";
-    font-size: 1.2em;
-    color: var(--JAMA-foreground);
+	content: " ]";
+	font-size: 1.2em;
+	color: var(--JAMA-foreground);
 }
 
 section ins {
-    /* color: white; */
-    font-size: 1em;
-    color: var(--JAMA-blue);
-    text-decoration: none;
-    /* background-color: #3d6869; */
-    /* padding: 7px; */
-    /* border-radius: 5px; */
+	/* color: white; */
+	font-size: 1em;
+	color: var(--JAMA-blue);
+	text-decoration: none;
+	/* background-color: #3d6869; */
+	/* padding: 7px; */
+	/* border-radius: 5px; */
 }
 
 section.scroll > ul {
-    /* width: 1100px; */
-    /* height: 500px; */
-    overflow-x: hidden;
-    overflow-y: auto;
-    /* padding: 20px; */
+	/* width: 1100px; */
+	/* height: 500px; */
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* padding: 20px; */
 }
 
 .outline li {
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #dddddd;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #dddddd;
 }
 
 .outline strong {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 section > *:first-child,
 section > header:first-child + * {
-    margin-top: 0;
+	margin-top: 0;
 }
-section code {
-    /* background: var(--JAMA-blue); */
-    border-radius: 0.2em;
-    border: 1px solid var(--JAMA-blue);
-    color: var(--JAMA-blue);
-    display: inline-block;
-    font-family: "Open Sans", sans-serif;
-    /* font-family: "Inter", sans-serif; */
-    /* font-family: 'JetBrains Mono', monospace; */
-    font-weight: 700;
-    letter-spacing: 0.5;
-    margin: 0.1em;
-    padding: 0.1em 0.3em 0.1em 0.3em;
-    vertical-align: baseline;
-    animation-name: fadeIn;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-delay: 0.2s;
+/* Inline code only (not code blocks) */
+section :not(pre) > code {
+	border-radius: 0.2em;
+	border: 1px solid var(--JAMA-blue);
+	color: var(--JAMA-blue);
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.5;
+	margin: 0.1em;
+	padding: 0.1em 0.3em 0.1em 0.3em;
+	vertical-align: baseline;
+	animation-name: fadeIn;
+	animation-duration: 0.3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
 }
 section > p {
-    transition: transform 0.2s ease;
+	transition: transform 0.2s ease;
 }
 section a {
-    text-decoration: none;
-    font-weight: 700;
-    background: -webkit-linear-gradient(right, #6c9a77, #2d696a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
+	text-decoration: none;
+	font-weight: 700;
+	background: -webkit-linear-gradient(right, #6c9a77, #2d696a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-decoration: none;
 }
 
 section a::after {
-    content: " 🔗"; /* show an arrow before the href */
+	content: " 🔗"; /* show an arrow before the href */
 }
 
 /* everything below is for demo appearances and not important to the concept */
 
 section > a:hover {
-    background: #2d696a;
+	background: #2d696a;
 }
 
 em {
-    font-family:
-        "Lora", serif; /* 使用 'Lora' 字體，若無法加載則回退到系統的serif字體 */
-    font-weight: 700;
-    font-style: italic; /* 設置斜體 */
+	font-family: "Lora", serif; /* 使用 'Lora' 字體，若無法加載則回退到系統的serif字體 */
+	font-weight: 700;
+	font-style: italic; /* 設置斜體 */
 }
 section.blue::after,
 section footer,
 section::after {
-    box-sizing: border-box;
-    line-height: 30px;
-    /* overflow: hidden; */
-    padding: 10px 20px;
-    position: absolute;
-    color: var(--JAMA-blue);
+	box-sizing: border-box;
+	line-height: 30px;
+	/* overflow: hidden; */
+	padding: 10px 20px;
+	position: absolute;
+	color: var(--JAMA-blue);
 }
 section::after {
-    content: attr(data-marpit-pagination) " of "
-        attr(data-marpit-pagination-total);
+	content: attr(data-marpit-pagination) " of "
+		attr(data-marpit-pagination-total);
 }
 section header {
-    position: absolute;
-    box-sizing: border-box;
-    background-color: var(--JAMA-blue);
-    font-weight: 500;
-    color: var(--JAMA-background) !important;
-    border-radius: 15px;
-    /* border-bottom-left-radius: 15px; */
-    /* border-bottom-left-radius: 15px; */
-    border-top-left-radius: 15px;
-    /* border-bottom-right-radius: 15px; */
-    /* border-left: #2d696a 35px solid; */
-    font-size: 18px;
-    height: 30px;
-    padding: 5px 20px;
-    top: 2rem;
-    right: 2rem;
-    font-weight: 400;
-    text-align: right;
-    /* max-width: 500px; */
+	position: absolute;
+	box-sizing: border-box;
+	background-color: var(--JAMA-blue);
+	font-weight: 500;
+	color: var(--JAMA-background) !important;
+	border-radius: 15px;
+	/* border-bottom-left-radius: 15px; */
+	/* border-bottom-left-radius: 15px; */
+	border-top-left-radius: 15px;
+	/* border-bottom-right-radius: 15px; */
+	/* border-left: #2d696a 35px solid; */
+	font-size: 18px;
+	height: 30px;
+	padding: 5px 20px;
+	top: 2rem;
+	right: 2rem;
+	font-weight: 400;
+	text-align: right;
+	/* max-width: 500px; */
 }
 
 section header a {
-    background: var(--JAMA-background);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+	background: var(--JAMA-background);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 section footer a:hover {
-    background: var(--JAMA-blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    visibility: visible;
-    opacity: 1;
+	background: var(--JAMA-blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	visibility: visible;
+	opacity: 1;
 }
 
 section footer a {
-    text-decoration: none;
-    opacity: 0;
-    transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease;
+	text-decoration: none;
+	opacity: 0;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 section footer {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 14px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
 }
 
 section header strong {
-    padding: 0px 4px 0px 4px;
-    font-weight: 500;
-    color: var(--JAMA-background);
-    /* text-decoration: underline; */
+	padding: 0px 4px 0px 4px;
+	font-weight: 500;
+	color: var(--JAMA-background);
+	/* text-decoration: underline; */
 }
 
 section.noheader header {
-    display: none;
+	display: none;
 }
 
 /* Page Number Animation */
@@ -243,24 +238,24 @@ section.noheader header {
 /* } */
 
 section.medium {
-    font-size: 36px;
+	font-size: 36px;
 }
 section.large {
-    font-size: 48px;
+	font-size: 48px;
 }
 section.small {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 section.happy {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 /* TWO colomn style */
 section.two {
-    column-count: 2;
-    column-gap: 1em; /* 欄間距 */
-    padding: 10px;
+	column-count: 2;
+	column-gap: 1em; /* 欄間距 */
+	padding: 10px;
 }
 
 /* fit h1 */
@@ -269,74 +264,72 @@ section.center h4,
 section.center h3,
 section.center h2,
 section.center h1 {
-    text-align: center;
-    justify-content: center !important;
-    max-width: 100%;
+	text-align: center;
+	justify-content: center !important;
+	max-width: 100%;
 }
 /* THREE colomn style */
 section.three {
-    column-count: 3;
+	column-count: 3;
 }
 /* FOUR colomn style */
 section.four {
-    column-count: 4;
+	column-count: 4;
 }
 
 section::after {
-    right: 0;
-    bottom: 0;
-    font-size: 14px;
+	right: 0;
+	bottom: 0;
+	font-size: 14px;
 }
 
 section.free {
-    display: flex;
-    width: 100%;
-    gap: 1em;
+	display: flex;
+	width: 100%;
+	gap: 1em;
 }
 section.free div {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
 }
 .cc {
-    height: 40px;
-    left: 40px;
-    bottom: 80px;
-    position: absolute;
+	height: 40px;
+	left: 40px;
+	bottom: 80px;
+	position: absolute;
 }
 
 /* 彈出框的基本樣式 */
 .popup {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #323232;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 4px;
-    font-size: 14px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transform: translateY(-20px);
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
-    z-index: 1000;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: #323232;
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 4px;
+	font-size: 14px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 1000;
 }
 
 /* 顯示時的動畫效果 */
 .popup.show {
-    opacity: 1;
-    transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(#000 1px, transparent 1px);
-    background-size: 10px 10px; /* 點的大小與間距 */
-    pointer-events: none; /* 讓覆蓋層不影響點擊事件 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(#000 1px, transparent 1px);
+	background-size: 10px 10px; /* 點的大小與間距 */
+	pointer-events: none; /* 讓覆蓋層不影響點擊事件 */
 }

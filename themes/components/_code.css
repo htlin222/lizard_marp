@@ -1,320 +1,78 @@
 /* @theme components/_code */
 
-/* Code Block Container
-   ------------------- */
+/* Code Block Container */
 section pre {
-    display: block;
-    min-height: 1em;
-    overflow: visible;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    border-radius: 0.5em;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
+	display: block;
+	min-height: 1em;
+	overflow: visible;
+	margin: 0;
+	padding: 0;
+	border-radius: 0.5em;
 }
 
-/* Code Content
-   ----------- */
+/* Code Content */
 section pre code {
-    box-sizing: border-box;
-    line-height: 1.5;
-    background: #282a36; /* Dracula theme background */
-    margin: 0;
-    min-width: 100%;
-    padding: 1.2em;
-    font-size: 0.95em;
-    color: #f8f8f2; /* Dracula theme text */
-    overflow-x: auto;
-    position: relative;
-    display: block;
-    font-family: "JetBrains Mono", "Fira Code", monospace;
-    border-radius: 0.5em;
-    transition: all 0.3s ease;
+	box-sizing: border-box;
+	line-height: 1.5;
+	background: #282a36;
+	margin: 0;
+	min-width: 100%;
+	padding: 1.2em;
+	font-size: 0.95em;
+	color: #f8f8f2;
+	overflow-x: auto;
+	display: block;
+	font-family: "JetBrains Mono", "Fira Code", monospace;
+	border-radius: 0.5em;
 }
 
-/* SVG Fitting
-   ---------- */
+/* SVG Fitting */
 section pre code svg[data-marp-fitting="svg"] {
-    max-height: calc(480px - 1.2em);
+	max-height: calc(480px - 1.2em);
 }
 
-/* Language Label Base Style
-   ----------------------- */
-section pre code[class*="language-"]::before {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-    padding: 0.2em 0.6em;
-    font-size: 0.7em;
-    background: #44475a;
-    color: #f8f8f2;
-    border-radius: 0.3em;
-    font-family: "JetBrains Mono", monospace;
-    z-index: 10;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-}
-
-section pre:hover code[class*="language-"]::before {
-    opacity: 1;
-}
-
-/* Language Labels
-   -------------- */
-section pre code.language-javascript::before,
-section pre code.language-js::before {
-    content: "JavaScript";
-}
-section pre code.language-typescript::before,
-section pre code.language-ts::before {
-    content: "TypeScript";
-}
-section pre code.language-python::before,
-section pre code.language-py::before {
-    content: "Python";
-}
-section pre code.language-java::before {
-    content: "Java";
-}
-section pre code.language-cpp::before {
-    content: "C++";
-}
-section pre code.language-c::before {
-    content: "C";
-}
-section pre code.language-css::before {
-    content: "CSS";
-}
-section pre code.language-html::before {
-    content: "HTML";
-}
-section pre code.language-xml::before {
-    content: "XML";
-}
-section pre code.language-bash::before {
-    content: "Bash";
-}
-section pre code.language-sh::before {
-    content: "Shell";
-}
-section pre code.language-json::before {
-    content: "JSON";
-}
-section pre code.language-yaml::before {
-    content: "YAML";
-}
-section pre code.language-markdown::before,
-section pre code.language-md::before {
-    content: "Markdown";
-}
-section pre code.language-sql::before {
-    content: "SQL";
-}
-section pre code.language-rust::before {
-    content: "Rust";
-}
-section pre code.language-go::before {
-    content: "Go";
-}
-section pre code.language-ruby::before,
-section pre code.language-rb::before {
-    content: "Ruby";
-}
-section pre code.language-php::before {
-    content: "PHP";
-}
-section pre code.language-r::before {
-    content: "R";
-}
-section pre code.language-swift::before {
-    content: "Swift";
-}
-section pre code.language-kotlin::before {
-    content: "Kotlin";
-}
-section pre code.language-scala::before {
-    content: "Scala";
-}
-section pre code.language-dart::before {
-    content: "Dart";
-}
-
-/* Syntax Highlighting - Dracula Theme
-   --------------------------------- */
-.hljs-built_in,
-.hljs-selector-tag,
-.hljs-section,
-.hljs-link {
-    color: #8be9fd;
-    font-style: italic;
-}
-
-.hljs-keyword {
-    color: #ff79c6;
-    font-weight: bold;
-}
-
-.hljs-title,
-.hljs-attr,
-.hljs-meta-keyword {
-    color: #50fa7b;
-}
-
-.hljs-string,
-.hljs-meta,
-.hljs-name,
-.hljs-type,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition,
-.hljs-variable,
-.hljs-template-tag,
-.hljs-template-variable {
-    color: #f1fa8c;
-}
-
-.hljs-comment,
-.hljs-quote,
-.hljs-deletion {
-    color: #6272a4;
-    font-style: italic;
-}
-
-.hljs-literal,
-.hljs-number {
-    color: #bd93f9;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-title,
-.hljs-section,
-.hljs-doctag,
-.hljs-type,
-.hljs-name,
-.hljs-strong {
-    font-weight: bold;
-}
-
-.hljs-emphasis {
-    font-style: italic;
-}
-
-/* Line Numbers
-   ----------- */
-pre ol {
-    all: unset;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    counter-reset: line-number 0;
-    padding-right: 1em;
-}
-
-pre ol li {
-    display: contents;
-    color: #f8f8f2;
-    font-weight: 400;
-    line-height: 1.5;
-    font-family: "JetBrains Mono", monospace;
-}
-
-pre ol li > span {
-    padding: 0 0.5em;
-    transition: all 0.2s ease;
-    position: relative;
-}
-
-pre ol li > span:hover {
-    font-weight: 600;
-    color: #ffb703;
-}
-
-pre ol li > span:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 0.2em;
-    pointer-events: none;
-}
-
-pre ol li span[data-marp-line-number]::before {
-    display: block;
-    content: counter(line-number);
-    counter-increment: line-number;
-    text-align: right;
-    color: #6272a4;
-    font-weight: 500;
-    background: #2c2e3a;
-    border-right: 3px solid #44475a;
-    margin-right: 0.8em;
-    padding: 0 0.6em;
-    transition: all 0.2s ease;
-}
-
-pre ol li:hover span[data-marp-line-number]::before {
-    color: #8be9fd;
-    border-right-color: #6272a4;
-}
-
-/* Code Blockquotes
-   --------------- */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(1em);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Code Blockquotes */
 section blockquote {
-    opacity: 0.7;
-    font-size: 10px !important;
-    margin: 5px 0 0 0;
-    padding-top: 5px;
-    border-top: 0.1px solid var(--JAMA-blue);
-    margin-top: 10px;
-    color: var(--JAMA-foreground);
-    /* background: var(--JAMA-background); */
-    position: absolute;
-    bottom: 0px;
-    right: 90px;
-    left: 25px;
+	opacity: 0.7;
+	font-size: 10px !important;
+	margin: 5px 0 0 0;
+	padding-top: 5px;
+	border-top: 0.1px solid var(--JAMA-blue);
+	margin-top: 10px;
+	color: var(--JAMA-foreground);
+	position: absolute;
+	bottom: 0px;
+	right: 90px;
+	left: 25px;
 }
 
 section blockquote::before {
-    content: "";
-    display: block;
-    font-weight: bold;
-    position: absolute;
-    color: var(--JAMA-green);
-    top: 0;
-    left: 0;
+	content: "";
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	color: var(--JAMA-green);
+	top: 0;
+	left: 0;
 }
+
 section blockquote > *:first-child {
-    margin-top: 0;
+	margin-top: 0;
 }
+
 section blockquote > blockquote > blockquote {
-    font-size: 50%;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    border-top: 0.1em dashed #555;
-    position: absolute;
-    bottom: -10px;
-    left: 10px;
+	font-size: 50%;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-top: 0.1em dashed #555;
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
 }
 
 section blockquote::before,
 section blockquote::after {
-    color: var(--JAMA-comment);
+	color: var(--JAMA-comment);
 }

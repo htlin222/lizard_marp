@@ -21,7 +21,7 @@ const urlCard = require("./utils/urlCard");
 
 module.exports = ({ marp }) => {
 	const instance = marp;
-	applyLineNumber(instance);
+	// applyLineNumber(instance);
 	// addDynamicHeader(instance);
 	applyLayout(instance);
 	addClassPerRule(instance);
